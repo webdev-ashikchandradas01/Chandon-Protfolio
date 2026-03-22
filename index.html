@@ -13,14 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+    <!--  Daisy Ui CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--  -->
-
 </head>
 
 <body class="bg-black">
-    <header class="mt-6">
+    <header class="">
         <h1 class="text-white font-bold text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-center px-2">
             HI, I AM <span class="text-purple-700">CHANDON</span>
         </h1>
@@ -33,12 +35,9 @@
                     your vision to life through video 🎬
                 </p>
             </div>
-            <div><img class="w-full max-w-[500px] h-auto mx-auto" src="images/avatar.png" alt="Avatar"></div>
+            <div> <img class="w-full max-w-[500px] h-auto mx-auto" src="images/avatar.png" alt="Avatar"></div>
             <div>
-                <!-- <button
-                    class="text-white font-semibold px-6 py-5 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-purple-600 ">
-                    CONTACT ME
-                </button> -->
+
                 <button
                     class="text-white font-semibold px-6 py-5 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-purple-600 
            transition-transform duration-300 hover:scale-105 hover:from-pink-500 hover:via-purple-600 hover:to-purple-700">
@@ -48,116 +47,208 @@
         </div>
     </header>
     <!-- Apps i used  -->
-    <h3 class="text-white text-3xl md:text-5xl text-center font-bold mt-8 mb-8">SOFTWARS I USED</h3>
-    <section class="mt-2 max-w-[1150px] bg-slate-500 p-4 mx-auto rounded-md overflow-hidden">
+    <div class="mt-20 py-10">
+        <h3 class="text-white text-3xl md:text-5xl text-center font-bold mt-8 mb-2">Software's I USED</h3>
+        <section id="software-section"
+            class="relative mt-8 max-w-[1150px] mx-auto p-[2px] overflow-hidden rounded-2xl group">
 
-        <div class="flex gap-10 animate-slide w-max">
-
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Softwars I use/Blender.png">
-                <p>Blender</p>
-            </div>
-
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Softwars I use/After effects.png">
-                <p>After Effects</p>
+            <!-- 1. The Animated RGB Border Layer -->
+            <div
+                class="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ff00ea_0%,#00ccff_30%,#ff00ea_60%,#00ccff_100%)] opacity-70">
             </div>
 
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Softwars I use/Adobe Illustrator.png">
-                <p>Illustrator</p>
-            </div>
+            <!-- 2. The Glassmorphism Body -->
+            <div id="marquee-glass-body"
+                class="relative z-10 bg-slate-900/50 backdrop-blur-2xl rounded-[14px] p-6 overflow-hidden transition-transform duration-300 ease-out">
 
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Softwars I use/davinci resolve.png">
-                <p>Davinci</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Softwars I use/Photoshop.png">
-                <p>Photoshop</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Softwars I use/premiere pro.png">
-                <p>Premiere Pro</p>
-            </div>
+                <!-- The Sliding Content -->
+                <div class="flex gap-12 animate-slide w-max text-white font-medium">
 
-            <!-- duplicate for smooth loop -->
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Adjusment.png">
-                <p>Adjusment</p>
-            </div>
+                    <!-- Icon Item -->
+                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/After effects composition.png"
+                            alt="After Effects">
+                        <p class="text-xs uppercase tracking-widest">After Effects</p>
+                    </div>
 
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/animation-original (19).png">
-                <p>Animation</p>
-            </div>
+                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/premiere pro.png" alt="PR">
+                        <p class="text-xs uppercase tracking-widest">Premiere Pro</p>
+                    </div>
 
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/color picker tool.png">
-                <p>Color Picker</p>
-            </div>
+                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/davinci resolve.png"
+                            alt="Davinci">
+                        <p class="text-xs uppercase tracking-widest">Davinci</p>
+                    </div>
 
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Blade.png">
-                <p>Blade</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/crop tool.png">
-                <p>Crop Tool</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img class="w-12" src="images/Graph editor.png">
-                <p>Graph Editor</p>
-            </div>
-        </div>
+                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Blender.png" alt="Blender">
+                        <p class="text-xs uppercase tracking-widest">Blender</p>
+                    </div>
 
-    </section>
+                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Photoshop.png" alt="PS">
+                        <p class="text-xs uppercase tracking-widest">Photoshop</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Adobe Illustrator.png"
+                            alt="Illustrator">
+                        <p class="text-xs uppercase tracking-widest">Illustrator</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Higgsfield.png"
+                            alt="Higgsfield">
+                        <p class="text-xs uppercase tracking-widest">Higgsfield</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Nanobanana.png"
+                            alt="Nanobanana">
+                        <p class="text-xs uppercase tracking-widest">Nanobanana</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Kling.png" alt="Kling">
+                        <p class="text-xs uppercase tracking-widest">Kling</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Sora.png" alt="Sora">
+                        <p class="text-xs uppercase tracking-widest">Sora Ai</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Topaz.png" alt="Topaz">
+                        <p class="text-xs uppercase tracking-widest">Topaz</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
     <!-- Demo videos  -->
-    <section class="mt-8 max-w-[1150px] mx-auto mb-12 ">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-7">
-            <!-- video  -->
-            <div class="max-w-sm mx-auto bg-slate-600 p-2 rounded-2xl shadow-lg overflow-hidden">
+    <section id="portfolio-section"
+        class="mt-3 max-w-[1150px] mx-auto mb-12  p-8 md:p-16 rounded-md shadow-2xl overflow-hidden"
+        style="perspective: 1500px;">
 
-                <!-- Video -->
-                <video class="w-full h-48 object-cover rounded-2xl" controls>
-                    <source src="videos/1166509_Environment_Hand_3840x2160.mp4" type="video/mp4">
-                </video>
-                <!-- Content  -->
-                <h2 class="font-semibold text-1xl text-center">Video Ttitle</h2>
-                <p class="text-[14px] font-light text-center">Description</p>
+        <!-- Video Cards Container -->
+        <div class=" bg-slate-950 py-10 px-4">
 
-            </div>
-            <!-- Video -->
-            <div class="max-w-sm mx-auto bg-slate-600 p-2 rounded-2xl shadow-lg overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
 
-                <!-- Video -->
-                <video class="w-full h-48 object-cover rounded-2xl" controls>
-                    <source src="videos/1476655_People_3840x2160.mp4" type="video/mp4">
-                </video>
-                <!-- Content  -->
-                <h2 class="font-semibold text-1xl text-center">Video Ttitle</h2>
-                <p class="text-[14px] font-light text-center">Description</p>
+                <!-- Video Card 1 -->
+                <div
+                    class="tilt-card group relative max-w-sm w-full bg-white/5 backdrop-blur-xl border border-white/20 p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-blue-500/50 hover:shadow-blue-500/10 hover:-translate-y-2 overflow-hidden">
+                    <!-- Subtle reflection light -->
+                    <div
+                        class="absolute -top-[50%] -left-[50%] w-full h-full bg-white/10 blur-3xl rounded-full pointer-events-none group-hover:bg-blue-500/10 transition-colors duration-700">
+                    </div>
 
-            </div>
-            <!-- Video -->
-            <div class="max-w-sm mx-auto bg-slate-600 p-2 rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative z-10">
+                        <div class="overflow-hidden rounded-[1.8rem] shadow-inner border border-white/10">
+                            <video
+                                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                                controls>
+                                <source src="videos/1166509_Environment_Hand_3840x2160.mp4" type="video/mp4">
+                            </video>
+                        </div>
 
-                <!-- Video -->
-                <video class="w-full h-48 object-cover rounded-2xl" controls>
-                    <source src="videos/5435456_Coll_wavebreak_People_3840x2160.mp4" type="video/mp4">
-                </video>
-                <!-- Content  -->
-                <h2 class="font-semibold text-1xl text-center">Video Ttitle</h2>
-                <p class="text-[14px] font-light text-center">Descriptions</p>
+                        <div class="p-5">
+                            <h2
+                                class="font-bold text-white text-xl text-center group-hover:text-blue-400 transition-colors">
+                                Environment</h2>
+                            <p class="text-slate-400 text-[14px] font-medium text-center mt-1">Cinematic Environment
+                                Design</p>
+
+                            <div class="mt-4 flex justify-center">
+                                <button
+                                    class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/10 backdrop-blur-md transition-all">
+                                    View Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div
+                    class="tilt-card group relative max-w-sm w-full bg-white/5 backdrop-blur-xl border border-white/20 p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-purple-500/50 hover:shadow-purple-500/10 hover:-translate-y-2 overflow-hidden">
+                    <div
+                        class="absolute -top-[50%] -left-[50%] w-full h-full bg-white/10 blur-3xl rounded-full pointer-events-none group-hover:bg-purple-500/10 transition-colors duration-700">
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="overflow-hidden rounded-[1.8rem] shadow-inner border border-white/10">
+                            <video
+                                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                                controls>
+                                <source src="videos/1476655_People_3840x2160.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="p-5">
+                            <h2
+                                class="font-bold text-white text-xl text-center group-hover:text-purple-400 transition-colors">
+                                Post Production</h2>
+                            <p class="text-slate-400 text-[14px] font-medium text-center mt-1">Professional Color
+                                Grading</p>
+
+                            <div class="mt-4 flex justify-center">
+                                <button
+                                    class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/10 backdrop-blur-md transition-all">
+                                    View Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div
+                    class="tilt-card group relative max-w-sm w-full bg-white/5 backdrop-blur-xl border border-white/20 p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-emerald-500/50 hover:shadow-emerald-500/10 hover:-translate-y-2 overflow-hidden">
+                    <div
+                        class="absolute -top-[50%] -left-[50%] w-full h-full bg-white/10 blur-3xl rounded-full pointer-events-none group-hover:bg-emerald-500/10 transition-colors duration-700">
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="overflow-hidden rounded-[1.8rem] shadow-inner border border-white/10">
+                            <video
+                                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                                controls>
+                                <source src="videos/5435456_Coll_wavebreak_People_3840x2160.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="p-5">
+                            <h2
+                                class="font-bold text-white text-xl text-center group-hover:text-emerald-400 transition-colors">
+                                Visual Effects</h2>
+                            <p class="text-slate-400 text-[14px] font-medium text-center mt-1">VFX & Motion Graphics</p>
+
+                            <div class="mt-4 flex justify-center">
+                                <button
+                                    class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/10 backdrop-blur-md transition-all">
+                                    View Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
-        <div class="flex items-center justify-center">
-            <button
-                class="text-white font-semibold py-6 px-12 rounded-sm bg-gradient-to-r from-pink-400 via-purple-500 to-purple-600 
-           transition-transform duration-300 hover:scale-105 hover:from-pink-500 hover:via-purple-600 hover:to-purple-700 mt-5 mb-2 text-center ">See
-                More</button>
+
+        <!-- See More Button -->
+        <div class="flex items-center justify-center mt-12">
+            <button class="text-white font-bold py-5 px-14 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 
+            transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] active:scale-95">
+                SEE MORE
+            </button>
         </div>
+
     </section>
     <!-- About Me and Services   -->
     <section class="bg-white py-5">
@@ -230,6 +321,84 @@
             </div>
         </div>
     </section>
+    <!-- Projects  -->
+    <section>
+        <h1 class="text-white font-extrabold text-4xl md:text-[64px] text-center">Projects</h1>
+        <!-- Projects items -->
+        <div>
+            <!-- Item  -->
+            <div class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#020617] p-4 sm:p-8">
+
+                <!-- Dynamic Background Blobs -->
+                <div class="absolute top-1/4 -left-20 h-96 w-96 rounded-full bg-indigo-600/20 blur-[120px]"></div>
+                <div class="absolute bottom-1/4 -right-20 h-96 w-96 rounded-full bg-blue-500/20 blur-[120px]"></div>
+
+                <!-- 3D PERSPECTIVE WRAPPER (Responsive Width: 970px Max) -->
+                <div id="card-container" class="w-full max-w-[970px]" style="perspective: 1200px;">
+
+                    <!-- THE TILT CARD -->
+                    <div id="tilt-card"
+                        class="group relative p-[2px] transition-all duration-300 ease-out overflow-hidden rounded-[2rem] md:rounded-[3rem] shadow-2xl shadow-indigo-500/10">
+
+                        <!-- 1. The Animated Dark RGB Border Layer -->
+                        <div
+                            class="absolute inset-[-1000%] animate-[spin_10s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#1e1b4b_0%,#4338ca_25%,#7c3aed_50%,#4338ca_75%,#1e1b4b_100%)]">
+                        </div>
+
+                        <!-- 2. The Glass Body (Responsive Height and Padding) -->
+                        <div
+                            class="relative z-10 flex flex-col justify-center min-h-[350px] md:min-h-[480px] rounded-[1.9rem] md:rounded-[2.9rem] bg-slate-950/70 backdrop-blur-3xl border border-white/10 p-8 md:p-16 lg:p-20">
+
+                            <!-- Content Area -->
+                            <div class="max-w-3xl">
+                                <div class="flex items-center gap-3 mb-6">
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-500/30 text-indigo-300 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+                                        Premium UI
+                                    </span>
+                                    <div class="h-[1px] w-12 bg-indigo-500/30"></div>
+                                </div>
+
+                                <h1
+                                    class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+                                    Glass <span class="text-indigo-400">Morphism</span>
+                                </h1>
+
+                                <h2 class="text-lg sm:text-xl md:text-3xl font-medium text-slate-300 mb-8">
+                                    Advanced 3D Perspective Design
+                                </h2>
+
+                                <p class="text-slate-400 leading-relaxed text-sm sm:text-base md:text-xl max-w-2xl">
+                                    This card scales to a maximum width of 970px. It features a responsive layout that
+                                    adjusts padding and font sizes for mobile, tablet, and desktop screens while
+                                    maintaining the 3D tilt effect and animated RGB border.
+                                </p>
+
+                                <!-- Action Button -->
+                                <div class="mt-10">
+                                    <button
+                                        class="px-8 py-3 bg-white text-slate-950 rounded-full font-bold text-sm md:text-base hover:bg-indigo-400 hover:text-white transition-all duration-300 shadow-xl shadow-white/5">
+                                        Explore Design
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
