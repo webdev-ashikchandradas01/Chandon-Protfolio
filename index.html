@@ -15,10 +15,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
-    <!--  Daisy Ui CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!--  -->
 </head>
 
 <body class="bg-black">
@@ -127,111 +123,131 @@
             </div>
         </section>
     </div>
-    <!-- Demo videos  -->
-    <section id="portfolio-section"
-        class="mt-3 max-w-[1150px] mx-auto mb-12  p-8 md:p-16 rounded-md shadow-2xl overflow-hidden"
-        style="perspective: 1500px;">
+    <!--  Videos Categories  -->
+    <section class="py-20 ">
+        <h1 class="text-white text-4xl md:text-7xl text-center font-extrabold p-10">Video Categories</h1>
+        <!-- Categories Items  -->
+        <div class=" bg-black p-4 flex items-center justify-center">
+            <!-- Grid Container: Max-width reduced to 5xl for a tighter look -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-5xl">
 
-        <!-- Video Cards Container -->
-        <div class=" bg-slate-950 py-10 px-4">
-
-            <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
-
-                <!-- Video Card 1 -->
+                <!-- Card 1: Video Editing -->
                 <div
-                    class="tilt-card group relative max-w-sm w-full bg-white/5 backdrop-blur-xl border border-white/20 p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-blue-500/50 hover:shadow-blue-500/10 hover:-translate-y-2 overflow-hidden">
-                    <!-- Subtle reflection light -->
-                    <div
-                        class="absolute -top-[50%] -left-[50%] w-full h-full bg-white/10 blur-3xl rounded-full pointer-events-none group-hover:bg-blue-500/10 transition-colors duration-700">
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="overflow-hidden rounded-[1.8rem] shadow-inner border border-white/10">
-                            <video
-                                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                                controls>
-                                <source src="videos/1166509_Environment_Hand_3840x2160.mp4" type="video/mp4">
-                            </video>
+                    class="group relative overflow-hidden rounded-2xl bg-slate-900 p-[1px] transition-all duration-300 hover:scale-[1.03]">
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-[-150%] animate-spin-slow bg-[conic-gradient(from_0deg,transparent_25%,#ec4899_50%,transparent_75%,#ec4899_100%)]">
                         </div>
-
-                        <div class="p-5">
-                            <h2
-                                class="font-bold text-white text-xl text-center group-hover:text-blue-400 transition-colors">
-                                Environment</h2>
-                            <p class="text-slate-400 text-[14px] font-medium text-center mt-1">Cinematic Environment
-                                Design</p>
-
-                            <div class="mt-4 flex justify-center">
-                                <button
-                                    class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/10 backdrop-blur-md transition-all">
-                                    View Project
-                                </button>
+                    </div>
+                    <div
+                        class="relative rounded-[15px] bg-slate-900/90 h-full p-5 backdrop-blur-xl flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-pink-500/20 text-pink-500 border border-pink-500/30 shadow-lg shadow-pink-500/10 text-xl">
+                                🎬
                             </div>
+                            <h3 class="mb-1 text-lg font-bold text-white leading-tight">Video Editing</h3>
+                            <p class="text-xs leading-relaxed text-slate-400">Professional cinematic cuts and
+                                story-driven pacing.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-pink-500">Level 1</span>
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-white transition-colors" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Card 2 -->
+                <!-- Card 2: Color Grading -->
                 <div
-                    class="tilt-card group relative max-w-sm w-full bg-white/5 backdrop-blur-xl border border-white/20 p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-purple-500/50 hover:shadow-purple-500/10 hover:-translate-y-2 overflow-hidden">
-                    <div
-                        class="absolute -top-[50%] -left-[50%] w-full h-full bg-white/10 blur-3xl rounded-full pointer-events-none group-hover:bg-purple-500/10 transition-colors duration-700">
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="overflow-hidden rounded-[1.8rem] shadow-inner border border-white/10">
-                            <video
-                                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                                controls>
-                                <source src="videos/1476655_People_3840x2160.mp4" type="video/mp4">
-                            </video>
+                    class="group relative overflow-hidden rounded-2xl bg-slate-900 p-[1px] transition-all duration-300 hover:scale-[1.03]">
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-[-150%] animate-spin-slow bg-[conic-gradient(from_0deg,transparent_25%,#3b82f6_50%,transparent_75%,#3b82f6_100%)]">
                         </div>
-
-                        <div class="p-5">
-                            <h2
-                                class="font-bold text-white text-xl text-center group-hover:text-purple-400 transition-colors">
-                                Post Production</h2>
-                            <p class="text-slate-400 text-[14px] font-medium text-center mt-1">Professional Color
-                                Grading</p>
-
-                            <div class="mt-4 flex justify-center">
-                                <button
-                                    class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/10 backdrop-blur-md transition-all">
-                                    View Project
-                                </button>
+                    </div>
+                    <div
+                        class="relative rounded-[15px] bg-slate-900/90 h-full p-5 backdrop-blur-xl flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/20 text-blue-400 border border-blue-500/30 shadow-lg shadow-blue-500/10 text-xl">
+                                🎨
                             </div>
+                            <h3 class="mb-1 text-lg font-bold text-white leading-tight">Coloring</h3>
+                            <p class="text-xs leading-relaxed text-slate-400">Advanced color correction and custom LUT
+                                application.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Level 2</span>
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-white transition-colors" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Card 3 -->
+                <!-- Card 3: Sound Design -->
                 <div
-                    class="tilt-card group relative max-w-sm w-full bg-white/5 backdrop-blur-xl border border-white/20 p-4 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-emerald-500/50 hover:shadow-emerald-500/10 hover:-translate-y-2 overflow-hidden">
-                    <div
-                        class="absolute -top-[50%] -left-[50%] w-full h-full bg-white/10 blur-3xl rounded-full pointer-events-none group-hover:bg-emerald-500/10 transition-colors duration-700">
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="overflow-hidden rounded-[1.8rem] shadow-inner border border-white/10">
-                            <video
-                                class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                                controls>
-                                <source src="videos/5435456_Coll_wavebreak_People_3840x2160.mp4" type="video/mp4">
-                            </video>
+                    class="group relative overflow-hidden rounded-2xl bg-slate-900 p-[1px] transition-all duration-300 hover:scale-[1.03]">
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-[-150%] animate-spin-slow bg-[conic-gradient(from_0deg,transparent_25%,#10b981_50%,transparent_75%,#10b981_100%)]">
                         </div>
-
-                        <div class="p-5">
-                            <h2
-                                class="font-bold text-white text-xl text-center group-hover:text-emerald-400 transition-colors">
-                                Visual Effects</h2>
-                            <p class="text-slate-400 text-[14px] font-medium text-center mt-1">VFX & Motion Graphics</p>
-
-                            <div class="mt-4 flex justify-center">
-                                <button
-                                    class="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/10 backdrop-blur-md transition-all">
-                                    View Project
-                                </button>
+                    </div>
+                    <div
+                        class="relative rounded-[15px] bg-slate-900/90 h-full p-5 backdrop-blur-xl flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 shadow-lg shadow-emerald-500/10 text-xl">
+                                🔊
                             </div>
+                            <h3 class="mb-1 text-lg font-bold text-white leading-tight">Audio Mixing</h3>
+                            <p class="text-xs leading-relaxed text-slate-400">Crystal clear sound effects and immersive
+                                mixing.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Level
+                                3</span>
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-white transition-colors" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Motion Graphics -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl bg-slate-900 p-[1px] transition-all duration-300 hover:scale-[1.03]">
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <div
+                            class="absolute inset-[-150%] animate-spin-slow bg-[conic-gradient(from_0deg,transparent_25%,#f59e0b_50%,transparent_75%,#f59e0b_100%)]">
+                        </div>
+                    </div>
+                    <div
+                        class="relative rounded-[15px] bg-slate-900/90 h-full p-5 backdrop-blur-xl flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-500/20 text-amber-400 border border-amber-500/30 shadow-lg shadow-amber-500/10 text-xl">
+                                ✨
+                            </div>
+                            <h3 class="mb-1 text-lg font-bold text-white leading-tight">Motion Graphics</h3>
+                            <p class="text-xs leading-relaxed text-slate-400">Dynamic 2D/3D animations for titles and
+                                transitions.</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-800 flex justify-between items-center">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-amber-400">Level 4</span>
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-white transition-colors" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -239,13 +255,7 @@
             </div>
         </div>
 
-        <!-- See More Button -->
-        <div class="flex items-center justify-center mt-12">
-            <button class="text-white font-bold py-5 px-14 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 
-            transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] active:scale-95">
-                SEE MORE
-            </button>
-        </div>
+
 
     </section>
     <!-- About Me and Services   -->
@@ -394,8 +404,6 @@
         </div>
         </div>
     </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="app.js"></script>
 </body>
 
