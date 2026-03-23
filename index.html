@@ -22,112 +22,110 @@
 </head>
 
 <body class="bg-black">
-    <header class="">
-        <h1 class="text-white font-bold text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-center px-2">
-            HI, I AM <span class="text-purple-700">CHANDON</span>
+    <header class="w-full py-10 px-4">
+        <!-- Main Title -->
+        <h1 class="text-white font-extrabold text-4xl md:text-7xl lg:text-[150px] text-center w-full mx-auto md:h-10 ">
+            HI, I AM CHANDON
         </h1>
-        <!-- Header Content  -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mt-9">
-            <div>
-                <p class="text-white font-semibold md:font-bold max-w-[350px] text-center mx-auto px-2">
+
+        <!-- Header Content Container -->
+        <div class="flex flex-col md:flex-row items-center justify-between mx-auto gap-10 mt-12 w-full max-w-[1150px]">
+
+            <!-- Left: Description -->
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-slate-400 text-sm sm:text-base md:text-xl leading-relaxed max-w-sm mx-auto md:mx-0">
                     A passionate video editor with years of experience in both online and offline marketplaces. Let me
-                    bring
-                    your vision to life through video 🎬
+                    bring your vision to life through video 🎬
                 </p>
             </div>
-            <div> <img class="w-full max-w-[500px] h-auto mx-auto" src="images/avatar.png" alt="Avatar"></div>
-            <div>
 
+            <!-- Center: Avatar Image -->
+            <div class="flex-1 flex justify-center">
+                <div>
+                    <img class="w-full max-w-[350px] h-auto block" src="images/avatar.png" alt="Avatar">
+                </div>
+            </div>
+
+            <!-- Right: Button -->
+            <div class="flex-1 flex justify-center md:justify-end">
                 <button
-                    class="text-white font-semibold px-6 py-5 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-purple-600 
-           transition-transform duration-300 hover:scale-105 hover:from-pink-500 hover:via-purple-600 hover:to-purple-700">
+                    class="text-white font-semibold px-8 py-5 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-purple-600 
+                transition-transform duration-300 hover:scale-105 hover:from-pink-500 hover:via-purple-600 hover:to-purple-700 whitespace-nowrap">
                     CONTACT ME
                 </button>
             </div>
+
         </div>
     </header>
-    <!-- Apps i used  -->
-    <div class="mt-20 py-10">
-        <h3 class="text-white text-3xl md:text-5xl text-center font-bold mt-8 mb-2">Software's I USED</h3>
-        <section id="software-section"
-            class="relative mt-8 max-w-[1150px] mx-auto p-[2px] overflow-hidden rounded-2xl group">
 
-            <!-- 1. The Animated RGB Border Layer -->
+    <!-- Software I Used Section -->
+    <div class="mt-20 py-10 max-w-[1150px] mx-auto px-4">
+        <h3 class="text-white text-3xl md:text-5xl text-center font-bold mb-10 uppercase tracking-tighter">
+            Software I USED
+        </h3>
+
+        <section id="software-section" class="relative p-[2px] overflow-hidden rounded-2xl group">
+            <!-- RGB Animated Border -->
             <div
                 class="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ff00ea_0%,#00ccff_30%,#ff00ea_60%,#00ccff_100%)] opacity-70">
             </div>
 
-            <!-- 2. The Glassmorphism Body -->
+            <!-- Glass Container -->
             <div id="marquee-glass-body"
-                class="relative z-10 bg-slate-900/50 backdrop-blur-2xl rounded-[14px] p-6 overflow-hidden transition-transform duration-300 ease-out">
+                class="relative z-10 bg-slate-900/80 backdrop-blur-2xl rounded-[14px] p-8 overflow-hidden">
 
-                <!-- The Sliding Content -->
-                <div class="flex gap-12 animate-slide w-max text-white font-medium">
+                <!-- Sliding Marquee Content -->
+                <div class="flex gap-16 animate-slide w-max text-white">
 
-                    <!-- Icon Item -->
-                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                    <!-- Software Item -->
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/After effects composition.png"
                             alt="After Effects">
-                        <p class="text-xs uppercase tracking-widest">After Effects</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">After Effects</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/premiere pro.png" alt="PR">
-                        <p class="text-xs uppercase tracking-widest">Premiere Pro</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Premiere Pro</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/davinci resolve.png"
                             alt="Davinci">
-                        <p class="text-xs uppercase tracking-widest">Davinci</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Davinci</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/Blender.png" alt="Blender">
-                        <p class="text-xs uppercase tracking-widest">Blender</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Blender</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/Photoshop.png" alt="PS">
-                        <p class="text-xs uppercase tracking-widest">Photoshop</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Photoshop</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/Adobe Illustrator.png"
                             alt="Illustrator">
-                        <p class="text-xs uppercase tracking-widest">Illustrator</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Illustrator</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/Higgsfield.png"
                             alt="Higgsfield">
-                        <p class="text-xs uppercase tracking-widest">Higgsfield</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Higgsfield</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
-                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Nanobanana.png"
-                            alt="Nanobanana">
-                        <p class="text-xs uppercase tracking-widest">Nanobanana</p>
-                    </div>
-
-                    <div class="flex flex-col items-center gap-2  transition-all duration-300">
+                    <div class="flex flex-col items-center gap-3 min-w-[100px]">
                         <img class="w-12 h-12 object-contain" src="images/Softwars I use/Kling.png" alt="Kling">
-                        <p class="text-xs uppercase tracking-widest">Kling</p>
+                        <p class="text-[10px] uppercase tracking-widest font-semibold">Kling AI</p>
                     </div>
 
-                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
-                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Sora.png" alt="Sora">
-                        <p class="text-xs uppercase tracking-widest">Sora Ai</p>
-                    </div>
-
-                    <div class="flex flex-col items-center gap-2 transition-all duration-300">
-                        <img class="w-12 h-12 object-contain" src="images/Softwars I use/Topaz.png" alt="Topaz">
-                        <p class="text-xs uppercase tracking-widest">Topaz</p>
-                    </div>
+                    <!-- Repeat items here if you want a seamless loop -->
                 </div>
             </div>
         </section>
-
     </div>
     <!-- Demo videos  -->
     <section id="portfolio-section"
